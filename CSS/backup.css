@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(220, 59, 93)
+}
+
+.main {
+    background-color: rgb(220, 59, 93);
+    display: grid;
+}
+
+
+#titulo {
+    padding: 0;
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    background-color: rgb(220, 59, 93);
+    font-family: Verdana
+}
+
+.titulo-navbar {
+    color: white;
+}
+
+.horarios {
+    margin: 5% auto 5%;
+    text-align: center;
+}
+
+.borderless {
+    border: rgb(220, 59, 93);   
+}
+
+.bloque-img {
+    margin: 2% 0 2% 0;
+}
+
+.transparente {
+    opacity: 0.6;
+}
+
+    
+.formulario {
+    width: 75%;
+    margin: 1% auto 1%;
+    color: white
+}
+
+.rrss1 { grid-area: rrss1; }
+.rrss2 { grid-area: rrss2; }
+.rrss3 { grid-area: rrss3; }
+.rrss4 { grid-area: rrss4; }
+.rrss5 { grid-area: rrss5; }
+
+.grid-container {
+    display: grid;
+    grid-template: 
+        'rrss1 rrss1 rrss1 rrss1 rrss1 rrss1'
+        'rrss2 rrss3 rrss3 rrss4 rrss5 rrss5';
+    grid-gap: 10px;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    color: white
+}
+
+
+
+
+/* Celular */
+@media only screen and (max-width: 500px) {
+    #titulo {
+        display: none;
+    }
+    nav > div {
+        padding: 1%;
+    }
+
+    .idx::after {
+        content: ' * Mind & Body *';
+    }
+
+    .claxes::after {
+        content: ' * Clases';
+    }
+
+    .imxs::after {
+        content: ' * Imágenes';
+    }
+
+    .mux::after {
+        content: ' * Música';
+    }
+
+    .banners {
+        display: flex;
+        flex-direction: row;
+
+
+    }
+    .banners img {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #texto {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        color:white
+    }
+    
+    #texto p {
+        color:white;
+        font-size: 15px;
+        margin-top: 2%;
+        margin-bottom: 10%;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: large;
+        color: white
+    }
+    
+    footer iframe {
+        width: 75%;
+        height: 300px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .horarios {
+        font-size: x-small;
+    }
+
+    .calesita {
+        width: 80%;
+    }
+
+    #listas {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #listas > iframe {
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    #pmus {
+        font-size: small;
+        color: white;
+        text-align: center;
+    }
+
+    .rrss2 > a > img, .rrss4 > a > img{
+        width: 60%;
+    }
+    .rrss3 > a > img, .rrss5 > a > img{
+        width: 30%;
+    }
+
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 981px){
+    .navbar-list {
+        margin-right: 2px;
+        margin-left: auto;
+        color: white
+    }
+    .banners {
+        width: 80%;
+        margin: 2% 10% 2% 10%;
+        text-align: center;
+    }
+    
+    .banners img {
+        width: 20%;
+        margin: 3px
+    }
+
+    #texto {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        color:white
+    }
+    
+    #texto p {
+        color:white;
+        font-size: 20px;
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: x-large;
+        color: white
+    }
+    
+    footer iframe {
+        width: 50%;
+        height: 300px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .horarios {
+        font-size: larger;
+        width: 75%;
+    }
+
+    
+    #listas {
+        margin-left: 5%;
+    
+    }
+    #pmus {
+        text-align: center;
+        color: white;
+    }
+
+    .rrss2 > a > img, .rrss3 > a > img, .rrss4 > a > img, .rrss5 > a > img{
+        width: 25%;
+    }
+    
+}
