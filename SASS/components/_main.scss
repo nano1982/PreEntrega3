@@ -1,0 +1,53 @@
+@import '../base/variables';
+@import '../base/colores';
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: $bg-general;
+}
+
+main {
+    background-color: $bg-general;
+    display: grid;
+}
+
+#titulo {
+    padding: 0;
+    font-size: xx-large;
+    text-align: center;
+    background-color: $bg-general;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: nth($colores,2);
+}
+
+.titulo-navbar {
+    color:white
+}
+
+.horarios {
+    margin: 5% auto 0;
+    text-align: center;
+}
+
+.borderless {
+    border: nth($colores,1)
+}
+
+.bloque-img {
+    margin: 2% 0 2% 0;
+}
+
+.transparente {
+    opacity: 0.6;
+}
+
+.formulario {
+    width: 75%;
+    margin: 1% auto 1%;
+    color: nth($colores,2)
+}
+
+footer {
+    display: block;
+}
