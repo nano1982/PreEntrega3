@@ -1,0 +1,168 @@
+@media only screen and (max-width: 599px) {
+    #titulo {
+        display: none;
+    }
+    nav > div {
+        padding: 1%;
+    }
+    .idx::after {
+        content: ' * Mind & Body *';
+    }
+
+    .claxes::after {
+        content: ' * Clases';
+    }
+
+    .imxs::after {
+        content: ' * Imágenes';
+    }
+
+    .mux::after {
+        content: ' * Música';
+    }
+
+    .banners {
+        display: flex;
+        flex-direction: row;
+        img {
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+
+    #texto {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: nth($colores,2);
+       
+        p {
+            font-size: 15px;
+            margin-top: 2%;
+            color: white;
+            margin-bottom: 0%;
+        }
+    }
+
+    footer {
+        p {
+            text-align: center;
+            font-size: large;
+            color: white
+        }
+        iframe {
+            width: 75%;
+            height: 300px;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .horarios {
+        font-size: x-small;
+        margin-bottom: 0;
+    }
+
+    .calesita {
+        width: 80%;
+    }
+
+    #listas {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #listas > iframe {
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    #pmus {
+        font-size: small;
+        color: white;
+        text-align: center;
+    }
+
+    .rrss2 > a > img, .rrss4 > a > img{
+        width: 60%;
+    }
+    .rrss3 > a > img, .rrss5 > a > img{
+        width: 30%;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .navbar-list {
+        margin-right: 2px;
+        margin-left: auto;
+        color: white
+    }
+    .banners {
+        width: 80%;
+        margin: 2% 10% 2% 10%;
+        text-align: center;
+        img {
+            width: 20%;
+            margin: 3px
+        }
+    }
+
+    #texto {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        color:white;
+        p {
+            color:white;
+            font-size: 20px;
+            margin-top: 2%;
+            margin-bottom: 3%;
+        }
+    }
+
+    footer {
+        p {
+        text-align: center;
+        font-size: x-large;
+        color: white;
+        
+        }
+        iframe {
+            width: 50%;
+            height: 300px;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    
+    .horarios {
+        font-size: larger;
+        width: 75%;
+    }
+
+    
+    #listas {
+        margin-left: 5%;
+    
+    }
+    #pmus {
+        text-align: center;
+        color: white;
+    }
+
+    .rrss2 > a > img, .rrss3 > a > img, .rrss4 > a > img, .rrss5 > a > img{
+        width: 25%;
+    }
+}
+
