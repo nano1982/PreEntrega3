@@ -26,7 +26,7 @@ main {
 }
 
 .horarios {
-    margin: 5% auto 0;
+    margin: 5% auto -1%;
     text-align: center;
 }
 
@@ -34,9 +34,6 @@ main {
     border: nth($colores,1)
 }
 
-.bloque-img {
-    margin: 2% 0 2% 0;
-}
 
 .transparente {
     opacity: 0.6;
@@ -46,8 +43,4 @@ main {
     width: 75%;
     margin: 1% auto 1%;
     color: nth($colores,2)
-}
-
-footer {
-    display: block;
 }
